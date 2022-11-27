@@ -29,6 +29,6 @@ provider "aws" {
 }
 
 # Terraform HTTP Provider Block
-provider "http" {
-  # Configuration options
-}
+# provider "http" {
+#   # Configuration options
+# }
