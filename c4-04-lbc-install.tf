@@ -45,7 +45,12 @@ resource "helm_release" "loadbalancer_controller" {
   set {
     name  = "clusterName"
     value = "${var.eks_cluster_id}"
-  }    
+  }
+
+  set {
+    name  = "nodeSelector.kubernetes\\.io/os"
+    value = "linux"
+  } 
     
 }
 
